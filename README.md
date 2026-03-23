@@ -9,7 +9,7 @@ Vous trouverez ici différents projets, exercices et démonstrations techniques 
 
 | Projet | Description | Lien |
 |-------|-------------|------|
-| **Projet 1 — Page personelle** | Page personelle en HTML5 et CSS3, mobiliser les acquis du cours. | [Voir le projet]([https://github.com/powemetal/Cours_Web_Front_End/tree/main/TP1/index.html](https://powemetal.github.io/Cours_Web_Front_End/TP1/)) |
+| **Projet 1 — Page personelle** | Page personelle en HTML5 et CSS3, mobiliser les acquis du cours. | [Voir le projet](https://github.com/powemetal/Cours_Web_Front_End/tree/main/TP1/index.html](https://powemetal.github.io/Cours_Web_Front_End/TP1/) |
 | **Projet 2 — Nom du projet** | Brève description du projet, technologies utilisées, objectifs pédagogiques. | [Accéder au projet](#) |
 | **Projet 3 — Nom du projet** | Brève description du projet, technologies utilisées, objectifs pédagogiques. | [Accéder au projet](#) |
 | **Projet 4 — Nom du projet** | Brève description du projet, technologies utilisées, objectifs pédagogiques. | [Accéder au projet](#) |
