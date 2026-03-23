@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li><a href="loisirs.html"><i class="fa-solid fa-clock"></i> Horaires & Loisirs</a></li>
+                <li><a href="portfolio.html"><i class="fa-solid fa-camera"></i> Portfolio</a></li>
+                <li><a class="current" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h1>Formulaire de contact</h1>
+        </section>
+
+        <section class="formulaire">
+            <form action="../../serveur/traitement.php" method="post">
+                <div class="form-sous-titre">
+                    <h2>Pour me contacter</h2>
+                    <p>Veuillez fournir ces informations</p>
+                </div>
+                <fieldset>
+                    <legend>Vos Coordonées</legend>
+                    <div>
+                        <label for="nom">Votre nom:</label>
+                        <input id="nom" name="nom" type="text" placeholder="John Doe">
+                    </div>
+
+                    <div>
+                        <label for="courriel">Votre adresse courriel:</label>
+                        <input id="courriel" name="courriel" type="email" placeholder="Johndoe@email.com">
+                    </div>
+
+                    <div>
+                        <label for="telephone" >Votre numéro de téléphone (optionnel):</label>
+                        <input id="telephone" name="telephone" type="number" placeholder="555-555-5555">
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Détails de votre message</legend>
+                    <label for="select_motif">Motif du message</label>
+                    <select id="select_motif">
+                        <option value="" selected disabled hidden>---Choisir---</option>
+                        <option value="proposition">Proposition d'affaire</option>
+                        <option value="offre_emploi">Offre d'emploi</option>
+                        <option value="urgence">Urgence</option>
+                        <option value="commentaire">Commentaire</option>
+                        <option value="autres">Autres</option>
+                    </select>
+
+                    <label for="radio_buttons">Vous etes:</label>
+                    <div class="div_radio">
+                        
+                        <div>
+                            <input type="radio" name="occupation" name="radio_enseignant" value="enseignant" id="radio_enseignant">
+                            <label for="radio_enseignant">Enseignant</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="occupation" name="radio_etudiant" value="etudiant" id="radio_etudiant">
+                            <label for="radio_etudiant">Etudiant</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="occupation" name="radio_employeur" value="employeur" id="radio_employeur">
+                            <label for="radio_employeur">Employeur</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="occupation" name="radio_autre" value="autre" id="radio_autre">
+                            <label for="radio_autre">Autre</label>
+                        </div>
+
+                        
+                    </div>
+                    <div>
+                        <label for="form_message">Votre message</label>
+                        <textarea rows="10" name="form_messaage" id="form_message"></textarea>
+                        <div class="inline">
+                            <input type="checkbox" name="form_chckbox" id="form_chckbx" value="selfcopy">
+                            <label for="form_chckbx">Envoyer une copie du courriel à votre adresse.</label>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer><i class="fa-solid fa-copyright"></i>Copyright 2026 - TP1 -Présenté par: Francis Boisvert</footer>
+</body>
+</html>
