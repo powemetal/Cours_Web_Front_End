@@ -10,8 +10,7 @@ Vous trouverez ici différents projets, exercices et démonstrations techniques 
 | Projet | Description | Lien |
 |-------|-------------|------|
 | **TP1 - Page personelle** | Page personelle en HTML5 et CSS3, mobiliser les acquis du cours. Front-End seulement| [Voir le projet](https://powemetal.github.io/Cours_Web_Front_End/TP1/) |
-| **TP1 - Page personelle** | Web App sur des cocktails, manipulations de listes| [Voir le projet](https://powemetal.github.io/Cours_Web_Front_End/TP2/) |
-https://github.com/powemetal/Cours_Web_Front_End/blob/main/TP2/client/index.html
+| **TP1 - Page personelle** | Web App sur des cocktails, manipulations de listes| [Voir le projet](https://powemetal.github.io/Cours_Web_Front_End/TP2/client) |
 
 
 
