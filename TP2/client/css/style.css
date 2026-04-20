@@ -1,0 +1,198 @@
+.bg-nav-perso {
+background-color: rgba(10, 10, 10, 0.7) !important; 
+  backdrop-filter: blur(12px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+  
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px cyan;
+  color: #00f2ff !important;
+  transition: 0.3s;
+}
+
+body {
+  padding-top: 70px;
+  background-color: #0f1113; 
+}
+
+.btn-search-perso {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.btn-search-perso:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Style personnalisé pour les cards de cocktails */
+.cocktail-card {
+  background-color: #1a1d20 !important; 
+  border: 1px solid rgba(255, 255, 255, 0.05); 
+  border-radius: 16px;
+  color: #e0e0e0; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 22%, 24%, 55% { opacity: 0.7; }
+}
+
+.cocktail-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--cocktail-glow); 
+  box-shadow: 
+    inset 0 0 10px rgba(255, 255, 255, 0.5), 
+    0 0 5px #fff,
+    0 0 20px var(--cocktail-glow),
+    0 0 40px var(--cocktail-glow);
+  text-shadow: 0 0 15px var(--cocktail-glow);
+}
+
+.card:hover .glass-img {
+  animation: neon-flicker 0.15s infinite alternate;
+}
+
+
+
+.card:hover .glass-img {
+  filter: brightness(0) invert(1) 
+          drop-shadow(0 0 2px #fff) 
+          drop-shadow(0 0 10px var(--cocktail-glow))
+          drop-shadow(0 0 20px var(--cocktail-glow));
+          
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
+
+
+
+.card-title {
+  display: flex;
+  min-height: 3.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #fff, 0 0 15px var(--cocktail-glow);
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text b {
+  color: #a0a0a0; 
+  text-transform: uppercase;
+  font-size: 0.90rem;
+  letter-spacing: 0.5px;
+}
+
+.cocktail-card .card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-buttons .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-buttons .btn-outline-light:hover {
+  /* background-color: var(--cocktail-glow);  */
+  color: #000;
+  border-color: var(--cocktail-glow);
+}
+
+/* Espacement avec la navbar (suppose que le conteneur principal a la classe .main-content) */
+.main-content {
+  margin-top: 32px;
+}
+
+/* Pour éviter que les cards soient collées entre elles */
+.row > .card {
+  margin-bottom: 24px;
+}
+
+/* Pour que les cards aient des marges latérales égales dans le container Bootstrap */
+#cocktails .row {
+  justify-content: center;
+}
+
+#cocktails .cocktail-card {
+  /* Utilise le système de grille Bootstrap pour marges latérales égales */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-outline-primary:hover .bi-pencil-square,
+.btn-outline-danger:hover .bi-trash {
+  color: white;
+}
+
+.bi-tras,
+.bi-pencil-square {
+  font-size: 16px;
+}
+
+.bi-trash {
+  color: RED;
+}
+
+.bi-pencil-square {
+  color: blue;
+}
+
+#lst_cocktails .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.glass-img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 12px auto;
+  filter: brightness(1.2) invert(0.9) sepia(1) saturate(5) hue-rotate(160deg)
+    drop-shadow(0px 0px 1px rgba(0, 0, 0, 1))
+    drop-shadow(0 0 5px rgba(0, 255, 255, 1));
+}
+
+.glass-container {
+  background: var(--cocktail-bg);
+  width: 150px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border: solid 2px var(--cocktail-bg);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--cocktail-glow);
+}
+
+ul {
+  font-size: 0.85rem;
+}
+
+
+p[data-bs-toggle="collapse"]::after {
+  content: ""; 
+}
+
+
+p[data-bs-toggle="collapse"].collapsed::after {
+  content: " ..."; 
+  color: var(--cocktail-glow);
+  font-weight: bold;
+}
