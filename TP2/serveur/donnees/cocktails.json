@@ -1055,7 +1055,7 @@
   {
     "name": "Aperol Spritz",
     "colors": "#FF5F00",
-    "glass": "wine",
+    "glass": "white-wine",
     "category": "Sparkling Cocktail",
     "ingredients": [
       { "unit": "cl", "amount": 9, "ingredient": "Prosecco" },
