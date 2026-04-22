@@ -144,8 +144,7 @@ export const recherche = (filtre, item) => {
   } else {
     elements.add(filtre);
   }
-  console.log(elements)
-  elements.forEach(element => {
+    elements.forEach(element => {
     filtrer(element, item).forEach(cocktail => {
       resultat.add(cocktail)
     })
@@ -163,8 +162,7 @@ export const tri = (ordre = null) => {
       return 1;
     }
   })
-  console.log(ordre)
-  if (ordre === "desc") {
+    if (ordre === "desc") {
     tabTrie.reverse();
   }
   afficherListeCocktails(tabTrie);
