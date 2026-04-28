@@ -20,14 +20,18 @@ document.getElementById(`dropdown-${filtre}`).addEventListener("click", (e) => {
       afficherListeCocktails(filtrer(filtre, valeur));
     }});});
 
+const searchForm = document.querySelector('form[role="search"]');
 const search_input = document.getElementById("search-input");
-document.getElementById("search-btn").addEventListener("click", (e) => {
-  const item = search_input.value;
-  if (item) {
-    afficherListeCocktails(recherche("search", item));
-  } else {
-    afficherListeCocktails();
-  }
+
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault(); 
+    const item = search_input.value;
+    if (item) {
+        const resultats = recherche("search", item);
+        afficherListeCocktails(Array.from(resultats));
+    } else {
+        afficherListeCocktails();
+    }
 });
 
 document.getElementById("dropdown-tri").addEventListener("click", (e) => {
