@@ -144,7 +144,7 @@ export const recherche = (filtre, item) => {
   } else {
     elements.add(filtre);
   }
-    elements.forEach(element => {
+  elements.forEach(element => {
     filtrer(element, item).forEach(cocktail => {
       resultat.add(cocktail)
     })

@@ -1,11 +1,11 @@
-.bg-nav-perso {
+.bg-nav-perso, footer{
 background-color: rgba(10, 10, 10, 0.7) !important; 
   backdrop-filter: blur(12px); 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand, .nav-link, footer {
   color: #ffffff !important;
   
   font-weight: 500;
@@ -39,6 +39,7 @@ background-color: rgba(10, 10, 10, 0.7) !important;
 
 body {
   padding-top: 70px;
+  padding-bottom: 70px;
   background-color: #0f1113; 
 }
 
